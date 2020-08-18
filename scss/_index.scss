@@ -1,0 +1,199 @@
+.indexcontainer{
+    max-width: 940px;
+    padding-top: 30px;
+    margin: 0 auto; 
+    font-family:  '微軟正黑體',sans-serif;
+    @include tablet{
+        max-width: 768px;
+        padding-top:0;
+    }
+    @include mobile{
+        max-width: 375px;
+    }
+}
+ 
+.banner{
+    margin-bottom: 60px;
+    @include tablet{
+        margin-bottom: 15px;
+    }
+    @include mobile{
+        margin-bottom: 0;
+    }
+}
+
+.category{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    &-list{
+        width: 32%;
+        font-size: $font-4;
+        line-height: 33px;
+        font-weight: bolder;
+        text-align: center;
+        h3{
+            background: $dark-green;
+            color: $white;
+            padding: 16px 0;
+        }
+        li{
+            border: 1px solid $marine-green;
+            @include tablet{
+                width: 50%;
+            }
+            @include mobile{
+                width: 100%;
+            }
+        }
+        a{
+            padding: 16px 0;
+            color: $dark-green;
+            &:hover{
+                background: $marine-green;
+            }
+        }
+        @include tablet{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        @include mobileL{
+            margin-bottom: 30px;
+        }
+        &-link{
+            @include tablet{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    &-now{
+        background: $marine-green;
+    }
+    &-content{
+        width: 66%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        color: $dark-green;
+        li{
+            width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            @include mobileL{
+                &:nth-child(4){
+                    display: none;
+                }
+                &:nth-child(5){
+                    display: none;
+                }
+                &:nth-child(6){
+                    display: none;
+                }
+                margin-bottom: 30px;
+            }
+            .favorite{
+                position: absolute;
+                right: 22px;
+                top: 19px;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: .2s;
+                }
+            }
+        }
+        div{
+            display: flex;    
+            font-size: $font;
+        }
+        p{
+            width: 58%;
+            font-weight: 400;
+            padding: 14px 0;
+            border: 1px solid $marine-green;
+        }
+        span{
+            width: 42%;
+            font-weight: bolder;
+            padding: 14px 0;
+            border: 1px solid $marine-green;
+        }
+        @include mobileL {
+            justify-content: center;
+        }
+        
+    }
+    @include tablet{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    @include mobileL{
+        margin-bottom: 0;
+    }
+}  
+.feature-today{
+    background: $dark-green;
+    color: $marine-green;
+    position: absolute;
+    left: 20px;
+    writing-mode: vertical-lr ;
+    font-size: $font-2;
+    line-height: 36px;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    font-weight: bolder; 
+} 
+
+.addtocart{
+    background: $marine-green;
+    font-size: $font-4;   
+    font-weight: bolder;
+    padding: 16px 0;
+    color: $dark-green;
+    &:hover{
+        color: $marine-green;
+        background: $dark-green;
+    }
+}
+
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    text-align: center;
+    ul{
+        display: flex;
+        align-items: center; 
+    }
+    li{
+        border: 1px solid $marine-green;
+        line-height: 28px;
+    }
+    &-now{
+        padding: 16px 26px;
+        font-weight: bolder;
+        background: $dark-green;
+        color: $marine-green;
+    }
+    &-other{
+        padding: 16px 26px;
+        font-weight: bolder;
+        color: $dark-green;
+    }
+    @include tabletL{
+        margin-right: 5px;
+        margin-bottom: 30px;
+    }
+    @include mobileL{
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow{
+        padding: 18px;
+    }
+    a:hover{
+        background: $marine-green;
+    }
+}
+

@@ -1,0 +1,92 @@
+.header{
+    max-width: 940px;
+    margin:  0 auto; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family:  '微軟正黑體',sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    img{
+        width: 24px;
+        height: 24px;
+    }   
+    &-nav{
+        display: none;
+        border:none;
+        background: transparent;
+        cursor: pointer;
+        @include tablet{
+            display: block;
+            &:focus{
+                outline: 0;
+            }
+        }
+        @include mobile{
+            padding:0
+        }
+    }
+    .logo{
+        background-image: url("../../img/logotype-sm-dark.svg");
+        width: 220px;
+        height: 40px;
+        background-repeat: no-repeat;
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+        @include mobileL{
+            width: 115px;
+            height: 24px;
+        }
+    }
+    .active {
+        max-height: 200px;
+    }
+    @include tablet{
+        padding: 0 30px ;
+    }
+    @include mobileL{
+        align-items: center;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    a:hover{
+        background: $marine-green;
+        border-radius: 100%;
+        border: inset 1px $dark-green;
+    }
+    &-link{
+        font-size: $font-2;
+        line-height: 22px;
+        font-weight: 900;
+        margin-right: 50px;
+        max-height: 0px;
+        display: flex;
+        align-items: center;
+        @include tablet{
+            position: absolute;
+            left: 0;
+            top: 150%;
+            width: 100%;
+            transition: all 0.8s;
+            overflow: hidden;
+            background: $whitesmoke;
+            flex-direction: column;
+            li {
+                width: 100%;
+                
+            }
+        }
+        a{  
+            text-align: center;
+            color: $dark-green;
+            padding:  10px 30px 8px ;
+        }  
+
+    }
+}

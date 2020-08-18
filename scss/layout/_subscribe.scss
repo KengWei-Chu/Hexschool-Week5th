@@ -1,0 +1,46 @@
+.subscribe{
+    background: $dark-green; 
+    padding: 30px 0;
+    &-container{
+        max-width: 780px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet{
+            max-width: 680px;     
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include mobileL{
+            justify-content: center;
+        }
+        @include mobile{
+            max-width: 315px;  
+            justify-content: start;
+        }
+    }
+    &-title{
+        display: flex;
+        align-items: center;
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        };
+        @include tablet{ 
+            margin-bottom: 33px;
+        }
+        @include mobile{
+            margin: 0 10px 33px;
+        }
+    }
+    &-content{
+        font-family:  '微軟正黑體',sans-serif;
+        font-size: $font-4;
+        line-height: 33px;
+        color: $marine-green;
+        font-weight: 500;
+    }
+}
+

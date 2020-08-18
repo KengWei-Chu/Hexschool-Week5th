@@ -1,0 +1,79 @@
+.footer{
+    background: $marine-green;
+    padding: 30px 0;
+    color: $dark-green;
+    font-family:  '微軟正黑體',sans-serif;
+    &-container{
+        max-width: 780px;
+        margin: 0 auto;
+        @include tablet{
+            max-width: 680px;
+        }
+        @include mobileL{
+            max-width: 315px;
+        }
+    }
+    &-content{
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 172px;
+            height: 27px;
+        }
+        li{
+            font-size: $font-2;
+            margin-bottom: 10px;
+        }
+        h3{
+            writing-mode: vertical-rl;
+            font-size: $font-4;
+            font-weight: 800;
+            line-height: 30px;
+            @include mobileL{
+                display: none;
+            }
+        }
+        span{
+            font-weight: 200;
+        }
+    }
+    &-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        img,ul {
+            @include mobileL{
+                margin-bottom: 38px;
+            }
+        }
+        
+    }
+    &-official{
+        font-size: $font-2;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        span{ 
+            font-size: 16px;
+            font-family: Times;
+        }
+        @include mobileL{
+            display: block;
+        }
+    }
+    &-icon{
+        display: flex;
+        li{
+            margin-right: 8px;
+        }
+        img{
+            width: 32px;
+            height: 32px;
+        }
+        @include mobileL{
+            margin-bottom: 23px;
+        }
+    }
+}

@@ -1,0 +1,483 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*上面為css reset*/
+*,*:after,*:before {
+    box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #3f5d45;
+}
+a{
+    display: block;
+}
+img{
+    display: block;
+    max-width: 100%;
+	height: auto;
+}
+.container{
+    max-width: 940px;
+    padding-top: 30px ;
+    margin: 0 auto; 
+    font-family:  '微軟正黑體',sans-serif;
+}
+@media (max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media (max-width:375px){
+    .container{
+        max-width: 375px;
+    }
+}
+/**/
+.header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.header-nav {
+    display: none;
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/dehaze-24px.png");
+    padding: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.header-logo{
+    background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg");
+    width: 220px;
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav-link{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 900;
+    display: flex;
+    margin-right: 50px;
+}
+.nav-link a{
+    padding:  10px 30px 8px ;
+}
+.nav a:hover{
+    background: #EAF0ED;
+}
+.nav img{
+    width: 24px;
+    height: 24px;
+}
+@media (max-width:768px){
+    .header-nav{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    .header{
+        padding: 0 30px ;
+    }
+}
+@media (max-width:425px){
+    .header{
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .header-logo{
+        width: 115px;
+        height: 24px;
+    }
+}
+
+/*廣告條*/
+.banner{
+    margin-bottom: 60px;
+}
+@media (max-width:768px){
+    .banner{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:375px){
+    .header{
+        padding: 0 30px ;
+    }
+    .banner{
+        margin-bottom: 0;
+    }
+}
+/**/
+.category{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+/*目錄*/
+.category-list{
+    width: 300px;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: bolder;
+    text-align: center;
+}
+.category-list h3{
+    background: #3F5D45;
+    color: white;
+    padding: 16px 0;
+}
+.category-list li{
+    border: 1px solid #EAF0ED;
+}
+.category-now{
+    background: #EAF0ED;
+}
+.category-list a{
+    padding: 16px 0;
+}
+.category-list a:hover{
+    background: #EAF0ED;
+}
+@media (max-width:768px){
+    .category{
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    .category-list{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .category-list-link{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .category-list li{
+        width: 50%;
+    }
+}
+@media (max-width:425px){
+    .category-list{
+        margin-bottom: 30px;
+    }
+    .category{
+        margin-bottom: 0;
+    }
+}
+@media (max-width:375px){
+    .category-list li{
+        width: 100%;
+    }
+}
+.category-content{
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category-content li{
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+.category-content  div{
+    display: flex;    
+}
+.category-content p{
+    width: 58%;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 14px 0;
+    border: 1px solid #EAF0ED;
+}
+.category-content span{
+    width: 42%;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 14px 0;
+    border: 1px solid #EAF0ED;
+}
+.feature-today{
+    background: #3F5D45;
+    color: #EAF0ED;
+    position: absolute;
+    left: 20px;
+    writing-mode: vertical-lr ;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 4px;
+    padding: 10px 0;
+    font-weight: bolder; 
+}
+.favorite{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+.favorite:hover{
+    border: 2px solid red;
+}
+.addtocart{
+    background: #EAF0ED;
+    font-size: 24px;   
+    font-weight: bolder;
+    padding: 16px 0;
+}
+.addtocart:hover{
+    color: #EAF0ED;
+    background: #3f5d45;
+}
+@media (max-width:425px){
+    .category-content li:nth-child(4),.content li:nth-child(5),.content li:nth-child(6){
+        display: none;
+    }
+    .category-content{
+        justify-content: center;
+    }
+    .category-content li{
+        margin-bottom: 30px;
+    }
+}
+/*頁*/
+.page{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.page ul{
+    display: flex;
+    align-items: center; 
+}
+.page li{
+    border: 1px solid #EAF0ED;
+    line-height: 28px;
+}
+.page-now,.page-other{
+    padding: 16px 26px;
+    font-weight: bolder;
+}
+.arrow{
+    padding: 18px;
+}
+.page a:hover{
+    background: #EAF0ED;
+    color: #3F5D45;
+}
+.page-now{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+@media (max-width:992px){
+    .page{
+      margin-right: 5px;
+      margin-bottom: 30px;
+    }
+}
+@media (max-width:425px){
+    .page{
+        justify-content: center;
+        align-items: center;
+    }
+}
+/*form*/
+.subscribe{
+    background: #3F5D45; 
+    padding: 30px 0;
+}
+.subscribe-container{
+    max-width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe-title{
+    display: flex;
+    align-items: center;
+}
+.subscribe-title img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.subscribe-content{
+    font-size: 24px;
+    line-height: 33px;
+    color: #EAF0ED;
+    font-weight: 500;
+    font-family:  '微軟正黑體',sans-serif;
+}
+.mail{
+    display: flex; 
+}
+.mail-content{
+    width: 100%;
+    font-size: 20px;
+    border: 0;
+    padding-left: 71px;
+    background: #EAF0ED  url(https://hexschool.github.io/webLayoutTraining1st/student-week1/mail-24px.png) no-repeat  ;
+    background-position: 20px 16px;
+}
+.mail-submit{
+    display: block;
+    padding: 20.5px 32px;
+    border: 0;
+    background: #FFE180  url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) no-repeat center;
+}
+@media(max-width:768px){
+    .subscribe-container{   
+        max-width: 680px;     
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .subscribe-title{
+        margin-bottom: 33px;
+    }
+}
+@media(max-width:425px){
+    .subscribe-container{   
+        justify-content: center;
+    }
+}
+@media(max-width:375px){
+    .subscribe-container{   
+        max-width: 315px;  
+        justify-content: start;  
+    }
+    .subscribe-title{
+        margin: 0 10px 33px;
+    }
+}
+/*footer*/
+.footer{
+    background: #EAF0ED;
+    padding: 30px 0;
+    color: #3F5D45;
+    font-family:  '微軟正黑體',sans-serif;      
+}
+.footer-container{
+    max-width: 780px;
+    margin: 0 auto;
+}
+.footer-content{
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-content img{
+	width: 172px;
+	height: 27px;
+}
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-content li{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-content h3{
+    writing-mode: vertical-rl;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 30px;
+}
+.footer-content span{
+    font-weight: 200;
+}
+.footer-official{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-icon{
+    display: flex;
+}
+.footer-icon li{
+    margin-right: 8px;
+}
+.footer-icon img{
+    width: 32px;
+    height: 32px;
+}
+.footer-official span{ 
+    font-size: 16px;
+    font-family: Times;
+}
+
+@media(max-width:768px){
+    .footer-container{   
+        max-width: 680px;     
+    }
+}
+@media(max-width:425px){
+    .footer-container{
+        max-width: 315px;
+    }
+    .footer-content h3{
+        display: none;
+    }
+    .footer-contact img,.footer-contact ul{
+        margin-bottom: 38px;
+    }
+    .footer-official{
+        display: block;
+    }
+    .footer-icon{
+        margin-bottom: 23px;
+    }
+}
