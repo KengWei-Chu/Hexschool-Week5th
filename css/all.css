@@ -94,11 +94,6 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-.header img {
-  width: 24px;
-  height: 24px;
-}
-
 .header-nav {
   display: none;
   border: none;
@@ -121,10 +116,15 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.header-nav img {
+  width: 24px;
+  height: 24px;
+}
+
 .header .logo {
   width: 220px;
   height: 40px;
-  background-image: url("./img/logotype-sm-dark.svg");
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg");
   background-repeat: no-repeat;
   text-indent: 101%;
   overflow: hidden;
@@ -163,6 +163,11 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav img {
+  width: 24px;
+  height: 24px;
 }
 
 .nav a:hover {
@@ -577,7 +582,7 @@ input::-webkit-inner-spin-button {
 }
 
 .category-content li {
-  width: 300px;
+  width: 49%;
   margin-bottom: 20px;
   text-align: center;
   position: relative;
@@ -586,6 +591,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 425px) {
   .category-content li {
     margin-bottom: 30px;
+    width: 100%;
   }
   .category-content li:nth-child(4) {
     display: none;
@@ -611,21 +617,21 @@ input::-webkit-inner-spin-button {
   transition: .2s;
 }
 
-.category-content div {
+.category-content li div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 20px;
 }
 
-.category-content p {
+.category-content li p {
   width: 58%;
   font-weight: 400;
   padding: 14px 0;
   border: 1px solid #EAF0ED;
 }
 
-.category-content span {
+.category-content li span {
   width: 42%;
   font-weight: bolder;
   padding: 14px 0;

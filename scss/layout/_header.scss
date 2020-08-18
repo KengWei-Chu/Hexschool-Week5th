@@ -9,10 +9,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    img{
-        width: 24px;
-        height: 24px;
-    }   
+       
     &-nav{
         display: none;
         border:none;
@@ -27,12 +24,16 @@
         @include mobile{
             padding:0
         }
+        img{
+            width: 24px;
+            height: 24px;
+        }
     }
     .logo{
         width: 220px;
         height: 40px;
-        background-image: url("./img/logotype-sm-dark.svg");
-        background-repeat: no-repeat;
+        background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg");
+        background-repeat: no-repeat ;
         text-indent: 101%;
         overflow: hidden;
         white-space: nowrap;
@@ -55,6 +56,10 @@
 .nav{
     display: flex;
     align-items: center;
+    img{
+        width: 24px;
+        height: 24px;
+    }
     a:hover{
         background: $marine-green;
         border-radius: 100%;
