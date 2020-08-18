@@ -823,14 +823,23 @@ input::-webkit-inner-spin-button {
   display: flex;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .shoppingcart .cart-count {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  .shoppingcart .cart-count {
     padding-bottom: 8.5px;
   }
+}
+
+.shoppingcart .cart-item {
+  margin-right: 39px;
 }
 
 .shoppingcart .cart-item p {

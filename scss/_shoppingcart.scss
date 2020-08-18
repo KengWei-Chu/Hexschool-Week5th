@@ -41,12 +41,15 @@
         }
         &-count{
             display: flex;
-            @include mobileL{
+            @include tablet{
                 flex-direction: column;
+            }
+            @include mobileL{
                 padding-bottom: 8.5px;
             }
         }
         &-item{
+            margin-right: 39px;
             p{
                 font-size: $font;
                 line-height: 28px;
