@@ -2,7 +2,7 @@
     max-width: 940px;
     padding-top: 30px;
     margin: 0 auto; 
-    font-family:  '微軟正黑體',sans-serif;
+    
     @include tablet{
         max-width: 768px;
         padding-top:0;
@@ -159,43 +159,4 @@
     }
 }
 
-.page{
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 60px;
-    text-align: center;
-    ul{
-        display: flex;
-        align-items: center; 
-    }
-    li{
-        border: 1px solid $marine-green;
-        line-height: 28px;
-    }
-    &-now{
-        padding: 16px 26px;
-        font-weight: bolder;
-        background: $dark-green;
-        color: $marine-green;
-    }
-    &-other{
-        padding: 16px 26px;
-        font-weight: bolder;
-        color: $dark-green;
-    }
-    @include tabletL{
-        margin-right: 5px;
-        margin-bottom: 30px;
-    }
-    @include mobileL{
-        justify-content: center;
-        align-items: center;
-    }
-    .arrow{
-        padding: 18px;
-    }
-    a:hover{
-        background: $marine-green;
-    }
-}
 
