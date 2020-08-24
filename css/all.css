@@ -75,12 +75,15 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+body {
+  font-family: '微軟正黑體',sans-serif;
+}
+
 .header {
   max-width: 940px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-family: '微軟正黑體',sans-serif;
   font-weight: 900;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +127,7 @@ input::-webkit-inner-spin-button {
 .header .logo {
   width: 220px;
   height: 40px;
-  background-image: url("https://hexschool.github.io/webLayoutTraining1st/student-week1/logo-all-dark.svg");
+  background-image: url("../img/logo-all-dark.svg");
   background-repeat: no-repeat;
   text-indent: 101%;
   overflow: hidden;
@@ -216,6 +219,70 @@ input::-webkit-inner-spin-button {
   padding: 10px 30px 8px;
 }
 
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.page ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page li {
+  border: 1px solid #EAF0ED;
+  line-height: 28px;
+}
+
+.page-now {
+  padding: 16px 26px;
+  font-weight: bolder;
+  background: #3F5D45;
+  color: #EAF0ED;
+}
+
+.page-other {
+  padding: 16px 26px;
+  font-weight: bolder;
+  color: #3F5D45;
+}
+
+@media (max-width: 992px) {
+  .page {
+    margin-right: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .page {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.page .arrow {
+  padding: 18px;
+}
+
+.page a:hover {
+  background: #EAF0ED;
+}
+
 .subscribe {
   background: #3F5D45;
   padding: 30px 0;
@@ -291,7 +358,6 @@ input::-webkit-inner-spin-button {
 }
 
 .subscribe-content {
-  font-family: '微軟正黑體',sans-serif;
   font-size: 24px;
   line-height: 33px;
   color: #EAF0ED;
@@ -309,11 +375,7 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   border: 0;
   padding-left: 71px;
-<<<<<<< HEAD
   background: #EAF0ED url(../img/mail-24px.png) no-repeat;
-=======
-  background: #EAF0ED url(https://hexschool.github.io/webLayoutTraining1st/student-week1/mail-24px.png) no-repeat;
->>>>>>> 4052110847d1bc9b0b62ce3d7de8ce8253f26c33
   background-position: 20px 16px;
 }
 
@@ -325,11 +387,7 @@ input::-webkit-inner-spin-button {
   display: block;
   padding: 20.5px 32px;
   border: 0;
-<<<<<<< HEAD
   background: #FFE180 url(../img/arrow_forward-24px.png) no-repeat center;
-=======
-  background: #FFE180 url(https://hexschool.github.io/webLayoutTraining1st/student-week1/arrow_forward-24px.png) no-repeat center;
->>>>>>> 4052110847d1bc9b0b62ce3d7de8ce8253f26c33
 }
 
 .mail-submit:focus {
@@ -340,7 +398,6 @@ input::-webkit-inner-spin-button {
   background: #EAF0ED;
   padding: 30px 0;
   color: #3F5D45;
-  font-family: '微軟正黑體',sans-serif;
 }
 
 .footer-container {
@@ -468,7 +525,6 @@ input::-webkit-inner-spin-button {
   max-width: 940px;
   padding-top: 30px;
   margin: 0 auto;
-  font-family: '微軟正黑體',sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -576,6 +632,22 @@ input::-webkit-inner-spin-button {
   background: #EAF0ED;
 }
 
+@media (max-width: 768px) {
+  .category {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .category {
+    margin-bottom: 0;
+  }
+}
+
 .category-content {
   width: 66%;
   display: -webkit-box;
@@ -654,22 +726,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (max-width: 768px) {
-  .category {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 425px) {
-  .category {
-    margin-bottom: 0;
-  }
-}
-
 .feature-today {
   background: #3F5D45;
   color: #EAF0ED;
@@ -698,75 +754,10 @@ input::-webkit-inner-spin-button {
   background: #3F5D45;
 }
 
-.page {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-bottom: 60px;
-  text-align: center;
-}
-
-.page ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.page li {
-  border: 1px solid #EAF0ED;
-  line-height: 28px;
-}
-
-.page-now {
-  padding: 16px 26px;
-  font-weight: bolder;
-  background: #3F5D45;
-  color: #EAF0ED;
-}
-
-.page-other {
-  padding: 16px 26px;
-  font-weight: bolder;
-  color: #3F5D45;
-}
-
-@media (max-width: 992px) {
-  .page {
-    margin-right: 5px;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 425px) {
-  .page {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.page .arrow {
-  padding: 18px;
-}
-
-.page a:hover {
-  background: #EAF0ED;
-}
-
 .shoppingcartcontainer {
   max-width: 940px;
   padding-top: 30px;
   margin: 0 auto;
-  font-family: '微軟正黑體',sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -816,23 +807,23 @@ input::-webkit-inner-spin-button {
   }
 }
 
-.shoppingcart .cart {
+.cart {
   margin-bottom: 20px;
 }
 
-.shoppingcart .cart-img {
+.cart-img {
   width: 110px;
   height: 110px;
 }
 
-.shoppingcart .cart-count {
+.cart-count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 768px) {
-  .shoppingcart .cart-count {
+  .cart-count {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -841,38 +832,39 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 425px) {
-  .shoppingcart .cart-count {
+  .cart-count {
     padding-bottom: 8.5px;
   }
 }
-.shoppingcart .cart-item {
+
+.cart-item {
   margin-right: 39px;
 }
 
-.shoppingcart .cart-item p {
+.cart-item h3 {
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 3px;
 }
 
-.shoppingcart .cart-item span {
+.cart-item span {
   font-size: 16px;
   line-height: 20px;
 }
 
 @media (max-width: 425px) {
-  .shoppingcart .cart-item {
+  .cart-item {
     margin-bottom: 8px;
   }
 }
 
 @media (max-width: 425px) {
-  .shoppingcart .cart {
+  .cart {
     padding: 0 30px;
   }
 }
 
-.shoppingcart .cart li {
+.cart li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -887,23 +879,63 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #EAF0ED;
 }
 
-.shoppingcart .cart li:last-child {
+.cart li:last-child {
   border-bottom: none;
 }
 
 @media (max-width: 425px) {
-  .shoppingcart .cart li:last-child {
+  .cart li:last-child {
     border-bottom: 1px solid #EAF0ED;
   }
 }
 
-.shoppingcart .cart li .itemcount {
+.cart li h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart li .trashcan {
+  background-image: url(img/trashcan.png);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.cart li .trashcan:focus {
+  outline: 0;
+}
+
+.cart li .trashcan:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+@media (max-width: 425px) {
+  .cart li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+  .cart li h4 {
+    width: 100%;
+    border-top: 1px solid #EAF0ED;
+    padding: 8.5px 0;
+    text-align: end;
+  }
+  .cart li .trashcan {
+    display: none;
+  }
+}
+
+.itemcount {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.shoppingcart .cart li .itemcount button {
+.itemcount button {
   width: 48px;
   height: 48px;
   font-size: 16px;
@@ -915,11 +947,11 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.shoppingcart .cart li .itemcount button:focus {
+.itemcount button:focus {
   outline: 0;
 }
 
-.shoppingcart .cart li .itemcount input {
+.itemcount input {
   width: 48px;
   height: 48px;
   border: none;
@@ -930,48 +962,8 @@ input::-webkit-inner-spin-button {
   color: #3F5D45;
 }
 
-.shoppingcart .cart li .itemcount input:focus {
+.itemcount input:focus {
   outline: 0;
-}
-
-.shoppingcart .cart li h4 {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.shoppingcart .cart li .trashcan {
-  background-image: url(img/trashcan.png);
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.shoppingcart .cart li .trashcan:focus {
-  outline: 0;
-}
-
-.shoppingcart .cart li .trashcan:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-@media (max-width: 425px) {
-  .shoppingcart .cart li {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 0;
-  }
-  .shoppingcart .cart li h4 {
-    width: 100%;
-    border-top: 1px solid #EAF0ED;
-    padding: 8.5px 0;
-    text-align: end;
-  }
-  .shoppingcart .cart li .trashcan {
-    display: none;
-  }
 }
 
 .order {
@@ -1040,7 +1032,6 @@ input::-webkit-inner-spin-button {
   font-size: 24px;
   font-weight: 600;
   text-align: center;
-  font-family: '微軟正黑體',sans-serif;
 }
 
 .order-pay:hover {

@@ -70,62 +70,6 @@
     &-now{
         background: $marine-green;
     }
-    &-content{
-        width: 66%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        color: $dark-green;
-        li{
-            width: 49%;
-            margin-bottom: 20px;
-            text-align: center;
-            position: relative;
-            @include mobileL{
-                &:nth-child(4){
-                    display: none;
-                }
-                &:nth-child(5){
-                    display: none;
-                }
-                &:nth-child(6){
-                    display: none;
-                }
-                margin-bottom: 30px;
-                width: 100%;
-            }
-            .favorite{
-                position: absolute;
-                right: 22px;
-                top: 19px;
-                &:hover{
-                    transform: scale(1.1);
-                    transition: .2s;
-                }
-            }
-            div{
-                display: flex;    
-                font-size: $font;
-            }
-            p{
-                width: 58%;
-                font-weight: 400;
-                padding: 14px 0;
-                border: 1px solid $marine-green;
-            }
-            span{
-                width: 42%;
-                font-weight: bolder;
-                padding: 14px 0;
-                border: 1px solid $marine-green;
-            }
-        }
-
-        @include mobileL {
-            justify-content: center;
-        }
-        
-    }
     @include tablet{
         flex-wrap: wrap;
         justify-content:center;
@@ -134,6 +78,60 @@
         margin-bottom: 0;
     }
 }  
+.category-content{
+    width: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: $dark-green;
+    li{
+        width: 49%;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        @include mobileL{
+            &:nth-child(4){
+                display: none;
+            }
+            &:nth-child(5){
+                display: none;
+            }
+            &:nth-child(6){
+                display: none;
+            }
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        .favorite{
+            position: absolute;
+            right: 22px;
+            top: 19px;
+            &:hover{
+                transform: scale(1.1);
+                transition: .2s;
+            }
+        }
+        div{
+            display: flex;    
+            font-size: $font;
+        }
+        p{
+            width: 58%;
+            font-weight: 400;
+            padding: 14px 0;
+            border: 1px solid $marine-green;
+        }
+        span{
+            width: 42%;
+            font-weight: bolder;
+            padding: 14px 0;
+            border: 1px solid $marine-green;
+        }
+    }
+    @include mobileL {
+        justify-content: center;
+    }  
+}
 .feature-today{
     background: $dark-green;
     color: $marine-green;
